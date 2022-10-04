@@ -143,12 +143,12 @@ class App {
     
     //change the variable in room for the change in scene
     
-    const room = './assets/rooms/room.glb';
+    const room = './assets/rooms/Final_Interior.glb';
     const loader = new GLTFLoader();
     loader.castShadow = true;
     loader.load(room, (gltf) => {
         // gltf.scene.position.y = -8;
-        gltf.scene.scale.set(0.5, 0.5, 0.5);
+        gltf.scene.scale.set(0.05, 0.05, 0.05);
         gltf.scene.traverse((child) => {
           
             if (child.isMesh) {
